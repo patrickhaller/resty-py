@@ -17,6 +17,8 @@ A simple todo app with journal looks like:
 		return resty.http_ok('')
 
 	resty.run(
+		port = 8000,
+		realm = 'My App',
 		prefix = '/app',
 		database = 'db-app.sqlite',
 		exposed_tables = ['todos', 'journals'],
